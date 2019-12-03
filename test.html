@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<style>
+			body
+			{
+				margin: 0;
+				/*max-width:100%;*/
+			}
+			*
+			{
+				box-sizing: border-box;
+			}
+			.header
+			{
+				background-color:#d3d3d3;
+				display: flex;
+				justify-content: space-between;
+			}
+
+			div.header figure
+			{
+				width:24%;
+				margin:0;
+			}
+
+			div.header figure img
+			{
+				max-height:100%;
+				max-width: 100%;
+				/*border:1px solid red;*/
+			}
+
+			.button_container
+			{
+				/*background-color: red;*/
+				/*height: 25px;*/
+				/*width: 25px;*/
+			}
+			div.button_container button[type="submit"]
+			{
+				padding:10px;
+				margin-top:1%;
+				/*height: 100%;*/
+				/*width:;*/
+
+			}
+
+			div.image_side
+			{
+				width:100%;
+				/*background-color: red;*/
+				display: none;
+				/*border:1px solid black;*/
+			}
+
+			.middle
+			{
+				width:75%;
+				/*background-color: blue;*/
+			}
+
+			.corner
+			{
+				width: 24%;
+				/*background-color:red;*/
+				
+
+			}
+
+			.search_div
+			{
+				background-color: #d3d3d3;
+				/*display: flex;*/
+				/*justify-content: center;*/
+
+			}
+
+			form.search input[type="text"]
+			{
+			  padding: 2%;
+			  /*font-size: 17px;*/
+			  border: 1px solid #0b7dda;
+			  float: left;
+			  width: 80%;
+			  background: #f1f1f1;
+			  border-right: none;
+			  margin-left:7%; 
+			  /*margin-top: 0.5%;*/
+			}
+
+			form.search button 
+			{
+			  float: left;
+			  /*width: 20%;*/
+			  padding: 2%;
+			  background: #f1f1f1;
+			  color: blue;
+			  margin-left: 0;
+			  /*margin-top: 0.5%;*/
+			  /*font-size: 17px;*/
+			  border: 1px solid #0b7dda;
+			  border-left: none; /* Prevent double borders */
+			  cursor: pointer;
+			}
+
+			.clearfix::after 
+			{
+			  content: "";
+			  clear: both;
+			  display: table;
+			}
+
+			form.search button:hover
+			{
+			  background: #0b7dda;
+			  color: white;
+			}
+
+			ul
+			{
+				list-style: none;
+				text-align: right;
+				margin-right: 5%;
+				color: grey;
+			}
+			li
+			{
+				display: inline-block;
+				padding: 2.5px;
+				/*border-right: 1px solid grey;*/
+				/*text-align: right;*/
+			}
+
+			.content_parent
+			{
+				display: flex;
+				justify-content: space-between;
+
+			}
+
+			.main_content
+			{
+				width:80%;
+				/*background-color: red;*/
+				padding: 5%;
+			}
+
+			.aside
+			{
+				width: 20%;
+				display: none;
+				padding: 5%;
+				background-color:#f7f7f7
+			}
+
+			h1, h2, h4
+			{
+				font-weight: normal;
+			}
+
+			h1, h2
+			{
+				color: #080808;
+				/*padding-right: 50%;*/
+			}
+
+			a
+			{
+				text-decoration: none;
+				line-height: 2%;
+			}
+
+
+			@media only screen and (min-width: 768px)
+			{
+				div.button_container button[type="submit"]
+				{
+					display: none;
+				}
+
+				div.image_side
+				{
+					max-width:100%;
+					display:flex;
+					justify-content: flex-end;
+				}
+
+				div.search_div
+				{
+					display: none;
+				}
+
+				.aside
+				{
+					display: block;
+					padding: 2.5%;
+				}
+
+				.main_content
+				{
+					padding: 2.5%;
+				}
+
+				h1
+				{
+					padding-right: 50%;
+				}
+
+
+			}
+
+
+		</style>
+		
+	</head>
+	<body>
+		<div class="header">
+				<figure>
+					<img src="sm_logo.png">
+				</figure>
+
+				<div class="image_side">
+					<div class="middle">
+						<form class="search clearfix" action="">
+					  		<input type="text" placeholder="Search" name="search">
+					 		<button type="submit"><i class="fa fa-search"></i></button>
+						</form>
+
+						<ul>
+							<li>Elements Search</li>
+							<li>Structure Search</li>
+							<li>Corrosion Search</li>
+						</ul>
+					</div>
+
+					<div class="corner">
+						<ul>
+							<li>Contact us</li>
+							<li><b>Betty Venus</b></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="button_container">
+					<button type="submit">Menu</button>
+				</div>
+		</div>
+		<div class="search_div">
+			<form class="search clearfix" action="">
+				  <input type="text" placeholder="Search" name="search">
+				  <button type="submit"><i class="fa fa-search"></i></button>
+			</form>
+		</div>
+
+		<div class="content_parent">
+
+			<div class="main_content">
+				<h1>NMR Data for S-<sub>33</sub> of (1S,4R)-7,7-dimethyl-2-oxobicyclo[2.2.1]heptane-1-methanesulfonic acid</h1>
+
+				<h2> Substance Details </h2>
+
+				<h4><strong>CAS Number:</strong> Some number here <br>
+				<strong>Hill formulla:</strong> some formula </h4>
+
+				<h2> Chemical Shift(s) </h2>
+			</div>
+
+			<div class="aside">
+				<h3> Actions </h3>
+				<button type="submit" class="colorstyle_active"> Download Table</button> <br>
+				<button type="submit" class="colorstyle_inactive"> Download citation</button> <br>
+
+<!-- 				<div class="icons">
+					<img id="fb_logo">
+					<img id="twitter_logo">
+					<img id="linkedin_logo">
+					<img id="mailbox_logo">
+				</div>
+ -->
+				<h3>Jump to:</h3>
+				<a href="">Substance Details</a> <br>
+				<a href="">Chemical Shifts</a> <br>
+				<a href="">About this Content</a> <br>
+			</div>
+
+		</div>
+	</body>
+</html>
